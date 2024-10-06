@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Cloudberryblue Limited</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: "Varela Round", sans-serif;
+  			font-weight: 400;
+ 			font-style: normal;
+            margin: 0;
+            padding: 0;
+            scroll-behavior: smooth;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #00203F;
+            color: #FFFFFF;
+            padding: 2rem;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+
+        .content-section {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 2rem 5%;
+            min-height: 100vh;
+            border-bottom: 1px solid #eaeaea;
+            flex-wrap: wrap;
+        }
+
+        .content-section:nth-child(even) {
+            background-color: #fff;
+        }
+
+        .content-section img {
+            width: 500px;
+            height: 500px;
+            object-fit: contain;
+            border-radius: 15px;
+        }
+
+        .text-content {
+            max-width: 600px;
+            flex: 1;
+            padding: 2rem;
+        }
+
+        .text-content h2 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            color: #333;
+        }
+
+        .text-content p {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: #555;
+        }
+
+        footer {
+    	 background-color: #00203F;
+            color: #FFFFFF;
+            text-align: center;
+            padding: 1.5rem;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 860px) {
+            .content-section {
+                flex-direction: column;
+            }
+
+            .content-section img {
+                width: 100%;
+                height: auto;
+            }
+        }
+
+        /* Scroll Animations */
+        .scroll-animation {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: all 0.5s ease-out;
+        }
+
+        .scroll-animation.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <img src="images/cloudberrybluelogo-white.svg" alt="CloudberryBlueLogo">
+      <p>Elevating Facades, Protecting Investments.</p>
+    </header>
+
+    <!-- About Section -->
+    <section class="content-section scroll-animation">
+        <img src="images/glass.jpg" alt="Glass Image">
+        <div class="text-content">
+            <h2>About Us</h2>
+            <p>We have been working with property owners and operators to maintain and improve the performance of building facades and roofs for over a decade, undertaking projects ranging from major façade refurbishment programmes to planned preventative maintenance and individual component replacement & repair.</p>
+            <p>We provide a wide range of commercial façade services to a diverse client base including leading property management companies, national construction companies, and local government.</p>
+        </div>
+    </section>
+
+    <!-- Services 1 Section -->
+    <section class="content-section scroll-animation">
+        <img src="images/metal.jpg" alt="Metal Image">
+        <div class="text-content">
+            <h2>Our Services</h2>
+            <h3>Commercial Glazing</h3>
+            <p>Overhauling and improving window operation as a cost-effective alternative to replacement, including:</p>
+            <ul>
+                <li>Glass replacement</li>
+                <li>Seal and gasket renewal</li>
+                <li>Window furniture upgrading</li>
+                <li>Opening winder mechanism servicing</li>
+                <li>Removal of scratches and dents from powder coated finishes</li>
+            </ul>
+        
+        </div>
+    </section>
+
+  <!-- Services 2 Section -->
+    <section class="content-section scroll-animation">
+        <img src="images/timber.jpg" alt="Timber Cladding Image">
+        <div class="text-content"
+  			<h2></h2>
+            <h3>Façade and Cladding</h3>
+            <p>Full survey / design / fabrication / install service for PPC aluminium rainscreen and roofing components.</p>
+            <ul>
+                <li>Leak investigation, including electrostatic membrane testing</li>
+                <li>Prepolymer liquid applied repair to commercial roofing systems</li>
+                <li>Application of safety film & bespoke branding design to entrance screens</li>
+            </ul>
+        </div>
+    </section>
+    
+    <!-- Safety Section -->
+    <section class="content-section scroll-animation">
+        <img src="images/PQSLogo.png" alt="PQS Logo">
+        <div class="text-content">
+            <h2>Safety</h2>
+            <p>Risk Assessments and detailed Method Statements are all site-specific and non-generic.</p>
+            <p>Key management and supervisory staff hold SMSTS qualifications and all operatives have passed the CITB Health & Safety Test and hold a CSCS card as a minimum, plus IPAF, PASMA, and IRATA qualifications depending on operational requirements.</p>
+            <p>Our Health & Safety procedures are externally accredited and are constantly being reviewed and upgraded.</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="content-section scroll-animation">
+        <img src="images/lewis.jpg" alt="Contact Image">
+        <div class="text-content">
+            <h2>Contact Us</h2>
+            <p>Email: <a href="mailto:mail@cloudberryblue.co.uk">mail@cloudberryblue.co.uk</a></p>
+            <p>Tel: 07912293748</p>
+            <p>We offer an initial, no-obligation free site survey. A fully costed quotation will be issued for consideration and instruction prior to any works commencing.</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Cloudberryblue Limited. All Rights Reserved.</p>
+    </footer>
+
+    <!-- Scroll Animation Script -->
+    <script>
+        const sections = document.querySelectorAll('.scroll-animation');
+
+        const observer = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.2 });
+
+        sections.forEach(section => {
+            observer.observe(section);
+        });
+    </script>
+</body>
+</html>
